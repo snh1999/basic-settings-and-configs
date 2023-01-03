@@ -1,0 +1,151 @@
+# espanso match file
+
+# For a complete introduction, visit the official docs at: https://espanso.org/docs/
+
+# You can use this file to define the base matches (aka snippets)
+# that will be available in every application when using espanso.
+
+# Matches are substitution rules: when you type the "trigger" string
+# it gets replaced by the "replace" string.
+matches:
+  # Simple text replacement
+  - trigger: ":espanso"
+    replace: "Hi there!"
+
+  - trigger: ":email99"
+    replace: "shariarnurnahin99@gmail.com"
+  
+  - trigger: ":sigh"
+    replace: "😮‍💨"
+  - trigger: ":nose"
+    replace: "🥸"
+  - trigger: ":nerd"
+    replace: "🤓"
+  - trigger: ":upside"
+    replace: "🙃"
+  - trigger: ":speechless"
+    replace: "😶"
+  - trigger: ":kije"
+    replace: "😒"
+  - trigger: ":sleep"
+    replace: "😴"
+  - trigger: ":drunk"
+    replace: "🥴"
+  - trigger: ":sordi"
+    replace: "🤧"
+  - trigger: ":dizzy"
+    replace: "😵‍💫"
+  - trigger: ":dekhi"
+    replace: "🧐"
+  - trigger: ":emotion"
+    replace: "🥺"
+  - trigger: ":angry"
+    replace: "😡"
+  - trigger: ":gali"
+    replace: "🤬"
+  - trigger: ":cry"
+    replace: "😭"
+  - trigger: ":hagu"
+    replace: "💩"
+  - trigger: ":skull"
+    replace: "💀"
+  - trigger: ":danger"
+    replace: "☠️"
+  - trigger: ":joker"
+    replace: "🤡"
+  - trigger: ":catl"
+    replace: "😸"
+  - trigger: ":catc"
+    replace: "😿"
+  - trigger: ":hurt"
+    replace: "🤕"
+  - trigger: ":inv"
+    replace: "🫥"
+  - trigger: ":hide"
+    replace: "😶‍🌫️"
+  - trigger: ":ki"
+    replace: "🤨"
+  - trigger: ":haha"
+    replace: "😂"
+  - trigger: ":melt"
+    replace: "🫠"
+  - trigger: ":sad"
+    replace: "🥲"
+  - trigger: ":rofl"
+    replace: "🤣"
+  - trigger: ":hello"
+    replace: "👋"
+  - trigger: ":ektu"
+    replace: "🤏"
+  - trigger: ":best"
+    replace: "🤌"
+  - trigger: ":fuck"
+    replace: "🖕"
+  - trigger: ":upor"
+    replace: "☝️"
+  - trigger: ":you"
+    replace: "🫵"
+  - trigger: ":like"
+    replace: "👍"
+  - trigger: ":maf"
+    replace: "🙏"
+  - trigger: ":dua"
+    replace: "🤲"
+  - trigger: ":deal"
+    replace: "🤝"
+  - trigger: ":note"
+    replace: "✍️"
+  - trigger: ":strong"
+    replace: "💪"
+  - trigger: ":eye"
+    replace: "👀"
+  - trigger: ":ehhh"
+    replace: "🙎‍♂️"
+  - trigger: ":nou"
+    replace: "🙅‍♂️"
+  - trigger: ":ami"
+    replace: "🙋‍♂️"
+  - trigger: ":bow"
+    replace: "🙇‍♂️"
+  - trigger: ":idk"
+    replace: "🤷‍♂️"
+  - trigger: ":black"
+    replace: "🌚"
+  - trigger: ":white"
+    replace: "🌝"
+  - trigger: ":salute"
+    replace: "🫡"
+  - trigger: ":brain"
+    replace: "🧠"
+  - trigger: ":pop"
+    replace: "🍿"
+  - trigger: ":hug"
+    replace: "🫂"
+  - trigger: ":nice"
+    replace: "👌"
+  - trigger: ":nice"
+    replace: "👌"
+    
+    
+  # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
+  # But matches can also be dynamic:
+
+  # Print the current date
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%m/%d/%Y"
+
+  # Print the output of a shell command
+  - trigger: ":shell"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "echo 'Hello from your shell'"
+
+  # And much more! For more information, visit the docs: https://espanso.org/docs/
