@@ -23,3 +23,6 @@ when in
  
 - `"vim.useSystemClipboard": true` ensures copy operation inside vim isn't specific to vim only, but for the whole system
 - my vim <leader> is `space` key
+
+# Espanso Shortcuts ( a few bengali words)
+
