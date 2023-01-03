@@ -1,0 +1,60 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "tab",
+        "command": "selectNextSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+      },
+      {
+        "key": "shift+tab",
+        "command": "selectPrevSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+      },
+      {
+        "key": "ctrl+alt+v",
+        "command": "toggleVim"
+      },
+      // ctrl + left arrow
+      {
+        "key": "alt+s",
+        "command": "cursorWordLeft",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "alt+shift+s",
+        "command": "cursorWordLeftSelect",
+        "when": "textInputFocus"
+      },
+      // ctrl + right arrow
+      {
+        "key": "alt+e",
+        "command": "cursorWordEndRight",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "alt+shift+e",
+        "command": "cursorWordEndRightSelect",
+        "when": "textInputFocus"
+      },
+      // backspace 
+      {
+        "key": "alt+b",
+        "command": "deleteWordLeft",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "alt+j",
+        "command": "editor.action.moveLinesDownAction"
+      },
+      {
+        "key": "alt+k",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "key": "alt+l",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus"
+      }, 
+     
+]
