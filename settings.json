@@ -1,0 +1,116 @@
+{
+    "extensions.autoUpdate": false,
+    "extensions.autoCheckUpdates": false,
+    "update.mode": "manual",
+    "workbench.enableExperiments": false,
+    "vim.smartRelativeLine": true,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<tab>"],
+            "commands": ["workbench.action.nextEditor"]
+        },
+        {
+            "before": ["<S-tab>"],
+            "commands": ["workbench.action.previousEditor"]
+        }
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["<C-j>"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["<C-k>"],
+            "after": ["<Esc>", "v"]
+        },
+        // ctrl + u = next line start
+        {
+            "before": ["<C-u>"],
+            "after": ["<Esc>", "j", "$", "i"]
+        },
+        // ctrl + i = next line up
+        {
+            "before": ["<C-i>"],
+            "after": ["<Esc>", "k", "$", "i"]
+        },
+        {
+            "before": ["<A-b>"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["<C-c>"],
+            "after": ["\"", "+", "y"]
+        },
+        {
+            "before": ["<C-v>"],
+            "after": ["\"", "+", "p"]
+        },
+        {
+            "before": ["p"],
+            "commands": ["editor.action.clipboardPasteAction"]
+        },
+        {
+            "before": ["<C-j>"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["i"],
+            "after": ["<Esc>", "i"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<C-n>"],
+            "commands": [":nohl"]
+        },
+        // split editor
+        {
+            "before": ["<leader>", "s"],
+            "commands": ["workbench.action.splitEditor"]
+        },
+        // toggle sidebar
+        {
+            "before": ["<leader>", "e"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
+            "before": ["<leader>", "f"],
+            "commands": ["revealInExplorer"]
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
+    "vim.overrideCopy": false,
+    "workbench.colorCustomizations": {},
+    "vim.handleKeys": {
+        // "<C-f>": false,
+        // // VS Code new marker @ next occurence
+        // "<C-d>": false,
+        // Copy
+        "<C-c>": false,
+        // Cut
+        "<C-x>": false,
+        // Paste
+        "<C-v>": false,
+        "<C-z>": false,
+        "<C-y>": false,
+        "<C-a>": false
+    },
+    "workbench.startupEditor": "none",
+    "markdown-preview-enhanced.previewTheme": "night.css",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[prisma]": {
+        "editor.defaultFormatter": "Prisma.prisma",
+        "editor.formatOnSave": true
+    },
+    "[javascript, typescript, python, json, java]": {
+        "editor.formatOnSave": true
+    },
+    "prettier.tabWidth": 4,
+    "prettier.printWidth": 120,
+    "explorer.confirmDelete": false
+}
